@@ -18,14 +18,13 @@ and preserving useful relationships across papers and concepts.
 
 Contains original source materials.
 
-Typical sources include:
+Structure:
 
-- research papers
-- technical reports
-- lecture slides
-- technical articles
-- documentation
-- personal notes
+- `raw/papers/`: research papers and technical reports
+- `raw/slides/`: lecture slides, talks, and presentations
+- `raw/articles/`: technical articles and blog posts
+- `raw/docs/`: documentation and technical references
+- `raw/notes/`: personal study and research notes
 
 Files under `raw/` are sources of truth.
 
