@@ -3,7 +3,7 @@
 **Source:** [[raw/papers/paper-vortex.pdf|Vortex paper]] (Chen et al., 2026)
 
 **Scope:** decoding-time sparse attention for LLM serving.
-**Related:** [[Dynamic Sparse Attention]], [[Paged KV Cache]], [[vTensor and vFlow]]
+**Related:** [[Dynamic Sparse Attention]], [[Paged KV Cache]], [[vTensor and vFlow]], [[FlashAttention]], [[Exact IO-Aware and Sparse Attention]]
 
 ## Why this paper matters
 
@@ -82,4 +82,4 @@ The reported best agent-generated flows are not evidence that autonomous search 
 
 ## Takeaway
 
-Vortex recasts sparse-attention serving from “write a custom kernel per algorithm” into a compiler/runtime problem. Its reusable insight is not a new selector alone: it is page-aware, sequence-local tensor composition that lets dynamic routing, cache state, and optimized sparse decode coexist in a modern serving stack.
+Vortex recasts sparse-attention serving from “write a custom kernel per algorithm” into a compiler/runtime problem. Its reusable insight is not a new selector alone: it is page-aware, sequence-local tensor composition that lets dynamic routing, cache state, and optimized sparse decode coexist in a modern serving stack. [[FlashAttention]] supplies the adjacent IO-aware kernel principle; see [[Exact IO-Aware and Sparse Attention]] for the boundary and connection.

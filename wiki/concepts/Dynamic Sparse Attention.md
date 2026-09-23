@@ -1,6 +1,6 @@
 # Dynamic Sparse Attention
 
-**Source grounded in:** [[Vortex]]
+**Source grounded in:** [[Vortex]], [[FlashAttention]]
 
 Dynamic sparse attention constructs the set of KV entries or blocks to attend to from the current query, hidden state, or other input-dependent state. This differs from static sparse attention, whose layout follows a fixed positional pattern independent of content.
 
@@ -13,7 +13,7 @@ KV cache --> query-independent summaries --> current query scores summaries
                                       select blocks / tokens --> exact attention on selection
 ```
 
-The routing stage is part of the algorithm, not just an attention-kernel input. A practical dynamic method must account for its score computation, reduction, selection, data-layout overhead, and the selected-attention kernel together.
+The routing stage is part of the algorithm, not just an attention-kernel input. A practical dynamic method must account for its score computation, reduction, selection, data-layout overhead, and the selected-attention kernel together. [[FlashAttention]] provides the complementary lesson that reducing selected work is insufficient when the remaining execution still produces excessive slow-memory traffic.
 
 ## In Vortex
 
