@@ -34,3 +34,8 @@ Original materials are added to `raw/`.
 Codex reads these sources and incrementally maintains the structured wiki.
 As new sources are added, existing pages should be updated and cross-linked rather
 than treating every source independently.
+
+
+
+
+## Thank you
