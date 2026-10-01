@@ -3,7 +3,8 @@
 **Source:** [[raw/papers/paper-vortex.pdf|Vortex paper]] (Chen et al., 2026)
 
 **Scope:** decoding-time sparse attention for LLM serving.
-**Related:** [[Dynamic Sparse Attention]], [[Paged KV Cache]], [[vTensor and vFlow]], [[FlashAttention]], [[Exact IO-Aware and Sparse Attention]]
+
+**Related:** [[Dynamic Sparse Attention]], [[Paged KV Cache]], [[vTensor and vFlow]], [[FlashAttention]], [[SGLang]], [[SGLang and Vortex]], [[InferenceBench]], [[Agentic Inference Optimization Vortex and InferenceBench]], [[Exact IO-Aware and Sparse Attention]]
 
 ## Why this paper matters
 
