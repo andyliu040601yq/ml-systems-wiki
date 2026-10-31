@@ -1,6 +1,6 @@
 # Agentic Inference Optimization Evaluation
 
-**Sources:** [[InferenceBench]], [[Vortex]]
+**Sources:** [[InferenceBench]], [[Vortex]], [[HEAR Protocol]]
 
 Evaluating an agent that optimizes inference systems requires more than measuring its best observed latency. The task also includes deployability, model quality, valid measurement, search behavior, and preservation of the best configuration.
 
@@ -17,7 +17,7 @@ Evaluating an agent that optimizes inference systems requires more than measurin
 
 ## Reading results carefully
 
-Agent studies with different interfaces answer different questions. Vortex's agent experiments test whether an expressive, constrained DSL makes sparse-attention algorithm exploration productive. InferenceBench tests open-ended autonomous inference engineering under a time budget, where deploying and preserving a valid server are part of the task. Compare these as complementary evaluation regimes, not as a head-to-head score.
+Agent studies with different interfaces answer different questions. Vortex's agent experiments test whether an expressive, constrained DSL makes sparse-attention algorithm exploration productive. InferenceBench tests open-ended autonomous inference engineering under a time budget, where deploying and preserving a valid server are part of the task. HEAR evaluates two particular harness–engine coordination policies (online cache/scheduling coordination and role-specific engine-mode selection); it is a protocol and policy-instantiation study, not an open-ended agent-optimization benchmark. Compare these as complementary questions, not as a head-to-head score.
 
 Report workload, hardware, baseline, time budget, failure penalties, seed variance, quality threshold, and integrity checks with any headline speedup. A single aggregate can conceal different behavior across prefill, decode, and queueing; scenario-level outcomes are needed to understand what changed.
 
@@ -28,3 +28,4 @@ Report workload, hardware, baseline, time budget, failure penalties, seed varian
 - Include integrity monitoring when the reward is an unbounded performance metric.
 - Treat equal wall-clock budgets as a comparison of complete workflows. A search method may outperform an agent even if the agent can occasionally find a stronger intermediate configuration.
 - Keep scope explicit: single-GPU server tuning does not establish cluster-scale or multi-GPU optimization capability.
+- Separate a coordination interface from the policies evaluated through it: HEAR's results support its tested policies/workloads, not a claim that message semantics alone improve serving.
