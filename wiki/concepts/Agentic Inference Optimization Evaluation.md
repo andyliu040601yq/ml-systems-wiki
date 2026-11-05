@@ -1,6 +1,6 @@
 # Agentic Inference Optimization Evaluation
 
-**Sources:** [[InferenceBench]], [[Vortex]], [[HEAR Protocol]]
+**Sources:** [[InferenceBench]], [[Vortex]], [[HEAR Protocol]], [[TAO]]
 
 Evaluating an agent that optimizes inference systems requires more than measuring its best observed latency. The task also includes deployability, model quality, valid measurement, search behavior, and preservation of the best configuration.
 
@@ -17,7 +17,7 @@ Evaluating an agent that optimizes inference systems requires more than measurin
 
 ## Reading results carefully
 
-Agent studies with different interfaces answer different questions. Vortex's agent experiments test whether an expressive, constrained DSL makes sparse-attention algorithm exploration productive. InferenceBench tests open-ended autonomous inference engineering under a time budget, where deploying and preserving a valid server are part of the task. HEAR evaluates two particular harness–engine coordination policies (online cache/scheduling coordination and role-specific engine-mode selection); it is a protocol and policy-instantiation study, not an open-ended agent-optimization benchmark. Compare these as complementary questions, not as a head-to-head score.
+Agentic systems papers can study either the agent as an optimizer or the serving system used by agents. Vortex's agent experiments test whether an expressive, constrained DSL makes sparse-attention algorithm exploration productive. InferenceBench tests open-ended autonomous inference engineering under a time budget, where deploying and preserving a valid server are part of the task. HEAR evaluates two particular harness–engine coordination policies; TAO evaluates a tool-aware multi-node scheduler. The latter two are serving-design studies, not open-ended agent-optimization benchmarks. Compare these as complementary questions, not as a head-to-head score.
 
 Report workload, hardware, baseline, time budget, failure penalties, seed variance, quality threshold, and integrity checks with any headline speedup. A single aggregate can conceal different behavior across prefill, decode, and queueing; scenario-level outcomes are needed to understand what changed.
 

@@ -1,12 +1,14 @@
 # Paged KV Cache
 
-**Source grounded in:** [[SGLang]], [[Vortex]], [[Cache Engineering for Agents]]
+**Source grounded in:** [[SGLang]], [[Vortex]], [[Cache Engineering for Agents]], [[TAO]]
 
 A paged KV cache stores tokens in a shared physical page pool instead of assigning each sequence one contiguous allocation. A logical sequence is reconstructed through a list of physical page IDs, which may be ragged across a batch and can be shared among sequences for prefix caching.
 
 ## Prefix sharing and cache residency
 
 [[SGLang]]'s RadixAttention indexes token-prefix paths in a radix tree and maps them to KV pages. Multiple requests can reuse pages for their longest common prefix. It keeps cached pages in the active KV memory pool, uses reference counts to protect pages used by active requests, and evicts least-recently-used leaves first. Prefix-aware scheduling increases reuse, with a starvation trade-off under greedy reordering.
+
+In distributed serving, [[TAO]] treats node-local reusable-prefix state as a scheduling credit. It decays stale observations and jointly places sessions onto nodes, while the serving engine still controls the actual pages. This separates cache *locality as a scheduler signal* from cache allocation or migration.
 
 In the SGLang paper's layout, each page holds one token. Other runtimes may choose different page granularities; the general property is indirection from logical token order to physical storage.
 

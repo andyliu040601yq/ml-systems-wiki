@@ -4,7 +4,7 @@
 
 **Related:** [[Agentic Inference Optimization Evaluation]]
 
-These works expose different system boundaries and evaluate different claims. Vortex and InferenceBench study agents optimizing systems; HEAR studies a reusable harness–engine protocol through two policy instantiations, rather than an autonomous optimization benchmark.
+These works expose different system boundaries and evaluate different claims. Vortex and InferenceBench study agents optimizing systems; HEAR studies a reusable harness–engine protocol and TAO a concrete tool-aware scheduler. The latter are serving-design studies, rather than autonomous optimization benchmarks.
 
 | | Vortex agent experiments | InferenceBench | HEAR |
 | --- | --- | --- |

@@ -4,3 +4,4 @@
 - 2026-09-22 - Ingested Vortex; added paper analysis and connected notes on dynamic sparse attention, paged KV cache, and vTensor/vFlow.
 - 2026-10-01 - Ingested SGLang and InferenceBench; integrated RadixAttention with paged KV notes and compared serving and agent-optimization scopes.
 - 2026-10-31 - Ingested HEAR Protocol and Cache Engineering for Agents; added harness–engine coordination and operation-history-aware KV cache synthesis, updated paging and agent-evaluation links, and normalized the two source filenames.
+- 2026-11-05 - Ingested TAO; integrated tool-return readiness and joint node placement with harness–engine coordination and paged KV scheduling notes, and compared its concrete scheduler with HEAR's protocol.
