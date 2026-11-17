@@ -1,4 +1,7 @@
-# ML Systems Wiki
+# ML Systems, Agents & RSI Wiki
+
+Research organized across three connected areas: ML systems, agent systems, and
+recursive self-improvement. Concepts and comparisons link evidence across them.
 
 ## Papers
 
@@ -7,6 +10,7 @@
 - [[HEAR Protocol]] - a bidirectional harness–engine contract for workflow-aware LLM serving.
 - [[Cache Engineering for Agents]] - direct active-KV control and AKV serving for long-horizon agents.
 - [[TAO]] - tool-aware joint admission and placement for agentic LLM serving across GPU nodes.
+- [[BOXBOX]] - agent-triggered recursive harness revision and runtime hot reloading for long-running software optimization.
 - [[SGLang]] - language/runtime co-design for executing structured, multi-call LLM programs.
 - [[Vortex]] - programmable, paged-layout-aware sparse attention serving for LLM decode.
 
@@ -16,6 +20,7 @@
 - [[Agentic Inference Optimization Evaluation]] - reliability, integrity, and search-process measures for agentic systems optimization.
 - [[Harness–Engine Coordination]] - combining workflow intent with live serving state and outcomes.
 - [[Tool-Aware Joint Scheduling]] - combines tool-return readiness, KV locality, and multi-node capacity.
+- [[Agent Self-Improvement]] - mechanisms that improve an agent's working procedure during or across tasks, and their evidence boundaries.
 - [[Cache Engineering]] - operation-history-aware control of active KV states.
 - [[IO-Aware Attention]] - FlashAttention's IO-aware exact attention, online softmax, and recomputation.
 - [[Paged KV Cache]] - shared physical KV pages, indirection, and prefix-cache-compatible layout.
@@ -26,5 +31,6 @@
 - [[Agentic Inference Optimization Vortex and InferenceBench]] - DSL-guided algorithm exploration versus open-ended server optimization.
 - [[Agent KV Cache Control]] - text-level context editing versus direct active-KV operations.
 - [[Agentic Serving Scheduling HEAR and TAO]] - reusable harness–engine contract versus a concrete joint scheduler.
+- [[Online and Offline Harness Improvement]] - task-specific online harness revision versus offline or externally scheduled optimization.
 - [[Exact IO-Aware and Sparse Attention]] - FlashAttention's kernel-level IO optimization versus Vortex's programmable dynamic sparse serving.
 - [[SGLang and Vortex]] - prefix KV reuse across program calls versus query-dependent sparse KV selection.

@@ -1,6 +1,6 @@
 # Agentic Inference Optimization Evaluation
 
-**Sources:** [[InferenceBench]], [[Vortex]], [[HEAR Protocol]], [[TAO]]
+**Sources:** [[InferenceBench]], [[Vortex]], [[BOXBOX]], [[HEAR Protocol]], [[TAO]]
 
 Evaluating an agent that optimizes inference systems requires more than measuring its best observed latency. The task also includes deployability, model quality, valid measurement, search behavior, and preservation of the best configuration.
 
@@ -14,10 +14,11 @@ Evaluating an agent that optimizes inference systems requires more than measurin
 | Measurement integrity | Does the score correspond to actual inference? | InferenceBench audits final server state and run traces for evaluation-path manipulation. |
 | Search process | Does the agent propose distinct hypotheses, isolate variables, measure, and compare? | InferenceBench logs traces/configurations and finds shallow, uncontrolled search despite domain knowledge. |
 | Shipped state | Is the best measured configuration still runnable at the deadline? | InferenceBench scores failed final deployments at baseline utility and separately analyzes best-seen intermediate servers. |
+| Long-horizon progress | Does the agent make correctness-preserving progress throughout a long task, and can it revise its own workflow when blocked? | [[BOXBOX]] tracks best-so-far correct speedup on PERFRACE and allows agent-triggered harness changes during execution. |
 
 ## Reading results carefully
 
-Agentic systems papers can study either the agent as an optimizer or the serving system used by agents. Vortex's agent experiments test whether an expressive, constrained DSL makes sparse-attention algorithm exploration productive. InferenceBench tests open-ended autonomous inference engineering under a time budget, where deploying and preserving a valid server are part of the task. HEAR evaluates two particular harness–engine coordination policies; TAO evaluates a tool-aware multi-node scheduler. The latter two are serving-design studies, not open-ended agent-optimization benchmarks. Compare these as complementary questions, not as a head-to-head score.
+Agentic systems papers can study either the agent as an optimizer or the serving system used by agents. Vortex's agent experiments test whether an expressive, constrained DSL makes sparse-attention algorithm exploration productive. InferenceBench tests open-ended autonomous inference engineering under a time budget, where deploying and preserving a valid server are part of the task. BOXBOX studies long-running software optimization and online improvement of the agent's executable harness. HEAR evaluates two particular harness–engine coordination policies; TAO evaluates a tool-aware multi-node scheduler. The latter two are serving-design studies, not open-ended agent-optimization benchmarks. Compare these as complementary questions, not as a head-to-head score.
 
 Report workload, hardware, baseline, time budget, failure penalties, seed variance, quality threshold, and integrity checks with any headline speedup. A single aggregate can conceal different behavior across prefill, decode, and queueing; scenario-level outcomes are needed to understand what changed.
 

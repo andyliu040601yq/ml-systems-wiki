@@ -5,3 +5,4 @@
 - 2026-10-01 - Ingested SGLang and InferenceBench; integrated RadixAttention with paged KV notes and compared serving and agent-optimization scopes.
 - 2026-10-31 - Ingested HEAR Protocol and Cache Engineering for Agents; added harness–engine coordination and operation-history-aware KV cache synthesis, updated paging and agent-evaluation links, and normalized the two source filenames.
 - 2026-11-05 - Ingested TAO; integrated tool-return readiness and joint node placement with harness–engine coordination and paged KV scheduling notes, and compared its concrete scheduler with HEAR's protocol.
+- 2026-11-17 - Expanded the wiki scope to ML systems, agents, and RSI; ingested BOXBOX and integrated recursive harness improvement, updated navigation, and removed the standalone speculative-decoding proposal and personal-project material to keep the repository focused on the wiki.
