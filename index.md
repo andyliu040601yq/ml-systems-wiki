@@ -11,6 +11,7 @@ recursive self-improvement. Concepts and comparisons link evidence across them.
 - [[Cache Engineering for Agents]] - direct active-KV control and AKV serving for long-horizon agents.
 - [[TAO]] - tool-aware joint admission and placement for agentic LLM serving across GPU nodes.
 - [[BOXBOX]] - agent-triggered recursive harness revision and runtime hot reloading for long-running software optimization.
+- [[Continual Harness]] - reset-free embodied-agent harness adaptation and model–harness co-learning.
 - [[SGLang]] - language/runtime co-design for executing structured, multi-call LLM programs.
 - [[Vortex]] - programmable, paged-layout-aware sparse attention serving for LLM decode.
 
