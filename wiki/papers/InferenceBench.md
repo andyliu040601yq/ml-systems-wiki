@@ -2,7 +2,7 @@
 
 **Source:** [[raw/papers/paper-InferenceBench.pdf|InferenceBench paper]] (Yeon, Rank, and Andriushchenko, 2026)
 
-**Related:** [[Agentic Inference Optimization Evaluation]], [[SGLang]], [[Vortex]], [[Agentic Inference Optimization Vortex and InferenceBench]]
+**Related:** [[Agentic Inference Optimization Evaluation]], [[SGLang]], [[Vortex]], [[ServerBench]], [[ServerBench and Agentic Inference Optimization Benchmarks]]
 
 ## Benchmark question
 
@@ -43,7 +43,7 @@ The result is not simply that agents lack serving knowledge. The authors find th
 
 The integrity gate is essential because speedup is unbounded: optimization pressure can exploit the measurement path without improving intended inference. The authors' judge has Cohen's kappa 0.82 against a second judge and, in a 50-run manual audit, no false positives and one missed violation. It is a benchmark safeguard, not a formal proof that every exploit is detected.
 
-This complements [[Vortex]]'s agent study. Vortex gives agents a narrow, documented sparse-attention programming interface and reports successful algorithm generation/iteration within it. InferenceBench instead exposes end-to-end framework and deployment decisions. The scopes and success criteria differ; their results are not contradictory.
+This complements [[Vortex]]'s agent study and [[ServerBench]]. Vortex gives agents a narrow, documented sparse-attention programming interface and reports successful algorithm generation/iteration within it. InferenceBench exposes broad deployment choices under four preset inference scenarios. ServerBench also evaluates full server design, but uses stateful coding-agent sessions, lets the agent choose offered concurrency, and scores token value that meets latency targets per GPU dollar. Their workloads and objectives differ, so their scores are not directly comparable; see [[ServerBench and Agentic Inference Optimization Benchmarks]].
 
 ## Limitations
 

@@ -12,6 +12,7 @@ recursive self-improvement. Concepts and comparisons link evidence across them.
 - [[TAO]] - tool-aware joint admission and placement for agentic LLM serving across GPU nodes.
 - [[BOXBOX]] - agent-triggered recursive harness revision and runtime hot reloading for long-running software optimization.
 - [[Continual Harness]] - reset-free embodied-agent harness adaptation and model–harness co-learning.
+- [[ServerBench]] - benchmark for agents designing complete LLM servers against stateful coding workloads and latency-qualified service value.
 - [[SGLang]] - language/runtime co-design for executing structured, multi-call LLM programs.
 - [[Vortex]] - programmable, paged-layout-aware sparse attention serving for LLM decode.
 
@@ -29,7 +30,7 @@ recursive self-improvement. Concepts and comparisons link evidence across them.
 
 ## Comparisons
 
-- [[Agentic Inference Optimization Vortex and InferenceBench]] - DSL-guided algorithm exploration versus open-ended server optimization.
+- [[ServerBench and Agentic Inference Optimization Benchmarks]] - compares constrained algorithm search and end-to-end serving-system design benchmarks.
 - [[Agent KV Cache Control]] - text-level context editing versus direct active-KV operations.
 - [[Agentic Serving Scheduling HEAR and TAO]] - reusable harness–engine contract versus a concrete joint scheduler.
 - [[Online and Offline Harness Improvement]] - task-specific online harness revision versus offline or externally scheduled optimization.

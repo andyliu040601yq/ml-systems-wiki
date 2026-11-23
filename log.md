@@ -7,3 +7,4 @@
 - 2026-11-05 - Ingested TAO; integrated tool-return readiness and joint node placement with harness–engine coordination and paged KV scheduling notes, and compared its concrete scheduler with HEAR's protocol.
 - 2026-11-17 - Expanded the wiki scope to ML systems, agents, and RSI; ingested BOXBOX and integrated recursive harness improvement, updated navigation, and removed the standalone speculative-decoding proposal and personal-project material to keep the repository focused on the wiki.
 - 2026-11-18 - Ingested Continual Harness; connected reset-free in-episode harness refinement and teacher-assisted model–harness co-learning with BOXBOX and the agent self-improvement synthesis.
+- 2026-11-23 - Ingested ServerBench; integrated its stateful coding-session replay, latency-qualified service-value objective, and full-system verification with the agentic inference-optimization evaluation synthesis.
