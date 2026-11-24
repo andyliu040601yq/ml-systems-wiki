@@ -8,3 +8,4 @@
 - 2026-11-17 - Expanded the wiki scope to ML systems, agents, and RSI; ingested BOXBOX and integrated recursive harness improvement, updated navigation, and removed the standalone speculative-decoding proposal and personal-project material to keep the repository focused on the wiki.
 - 2026-11-18 - Ingested Continual Harness; connected reset-free in-episode harness refinement and teacher-assisted model–harness co-learning with BOXBOX and the agent self-improvement synthesis.
 - 2026-11-23 - Ingested ServerBench; integrated its stateful coding-session replay, latency-qualified service-value objective, and full-system verification with the agentic inference-optimization evaluation synthesis.
+- 2026-11-24 - Ingested AIDE2; expanded the agent self-improvement synthesis to include recursive optimization of the research agent itself and compared its outer loop with online harness, model–harness, and cache-policy updates.

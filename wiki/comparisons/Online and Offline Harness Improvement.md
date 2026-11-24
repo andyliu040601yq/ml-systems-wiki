@@ -1,6 +1,6 @@
 # Online and Offline Harness Improvement
 
-**Papers:** [[Continual Harness]], [[BOXBOX]], [[Cache Engineering for Agents]]
+**Papers:** [[Continual Harness]], [[BOXBOX]], [[AIDE2]], [[Cache Engineering for Agents]]
 
 Harness and agent-policy improvement differs along two axes: whether changes are learned from reusable prior tasks or the current task, and whether they take effect before a task, between attempts, or inside an ongoing execution. BOXBOX evaluates one online point in this design space; the comparison below is grounded in its reported baselines and should not be read as a universal ranking.
 
@@ -23,3 +23,5 @@ The first four rows share BOXBOX's PERFRACE evaluation and matched four-hour bud
 - **What does “improvement” refer to?** A better harness can improve how the agent acts and learns; it is distinct from directly editing the task artifact. Claims about weight improvement need to account for teacher supervision and the training budget.
 
 [[Cache Engineering for Agents]] offers a related but separate RSI example: its recursively improved policy changes active KV-cache participation and is evaluated on held-out tasks. It does not perform Continual Harness's online harness edits or the described model–harness co-learning. See [[Agent Self-Improvement]] for a broader taxonomy. [[Harness–Engine Coordination]] and [[Agentic Serving Scheduling HEAR and TAO]] address serving interfaces and scheduling, not harness self-revision.
+
+[[AIDE2]] operates one level up from these task-local harness revisions: its outer loop changes the research agent's own code and tests candidates across multiple AI R&D tasks under fixed budgets. Its selection and ignition evidence is distinct from the PERFRACE comparison above; see [[Recursive Self-Improvement Mechanisms]].
