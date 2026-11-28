@@ -18,6 +18,7 @@ recursive self-improvement. Concepts and comparisons link evidence across them.
 - [[AHE]] - evolves coding-agent harnesses through component, experience, and decision observability.
 - [[HarnessX]] - composes typed harness processors and evolves them with trace-driven AEGIS; also studies harness–model co-evolution.
 - [[AI R&D Automation Analysis]] - reviews evidence, conditional feedback-loop scenarios, risks, and policy options for AI R&D automation.
+- [[Harness-Delta Attribution]] - separates benchmark overfitting, test-time scaling, and residual gains in harness evolution.
 - [[SGLang]] - language/runtime co-design for executing structured, multi-call LLM programs.
 - [[Vortex]] - programmable, paged-layout-aware sparse attention serving for LLM decode.
 
@@ -29,6 +30,7 @@ recursive self-improvement. Concepts and comparisons link evidence across them.
 - [[Tool-Aware Joint Scheduling]] - combines tool-return readiness, KV locality, and multi-node capacity.
 - [[Agent Self-Improvement]] - mechanisms that improve an agent's working procedure during or across tasks, and their evidence boundaries.
 - [[AI R&D Automation and Intelligence Explosion]] - distinguishes benchmarked harness/optimizer improvement from broader, uncertain AI R&D feedback scenarios.
+- [[Harness Evolution Gain Attribution]] - evaluation framework for interpreting harness score gains after compute matching and artifact neutralization.
 - [[Cache Engineering]] - operation-history-aware control of active KV states.
 - [[IO-Aware Attention]] - FlashAttention's IO-aware exact attention, online softmax, and recomputation.
 - [[Paged KV Cache]] - shared physical KV pages, indirection, and prefix-cache-compatible layout.

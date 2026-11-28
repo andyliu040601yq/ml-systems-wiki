@@ -10,3 +10,4 @@
 - 2026-11-23 - Ingested ServerBench; integrated its stateful coding-session replay, latency-qualified service-value objective, and full-system verification with the agentic inference-optimization evaluation synthesis.
 - 2026-11-24 - Ingested AIDE2; expanded the agent self-improvement synthesis to include recursive optimization of the research agent itself and compared its outer loop with online harness, model–harness, and cache-policy updates.
 - 2026-11-27 - Ingested Meta-Harness, AHE, HarnessX, and an AI R&D automation analysis; compared harness-search mechanisms and clarified the evidence boundary between benchmarked agent self-improvement and economy-scale RSI scenarios.
+- 2026-11-28 - Ingested Harness-Delta Attribution; added a reusable framework for separating benchmark overfitting, test-time scaling, and residual harness-evolution gains, and integrated it into the harness-method comparison.

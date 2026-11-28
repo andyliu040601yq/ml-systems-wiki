@@ -2,6 +2,8 @@
 
 **Sources:** [[AIDE2]], [[Meta-Harness]], [[AHE]], [[HarnessX]], [[Continual Harness]], [[BOXBOX]], [[Cache Engineering for Agents]]
 
+**Evaluation source:** [[Harness-Delta Attribution]]
+
 In this wiki, **agent self-improvement** means changing some reusable part of an agent system based on task experience or evaluation feedback. The phrase covers several different targets. It does not by itself mean that a model updates its weights, that the agent improves without external evaluation, or that improvement generalizes to new tasks.
 
 ## Improvement targets
@@ -23,6 +25,7 @@ These mechanisms act at different layers and their reported gains cannot be dire
 - **When does a revision take effect?** Distinguish offline training, between-task updates, between-attempt revisions, and hot reload during a live task.
 - **What state and budget persist?** A new policy can appear better if it receives more time, resets context, retains useful artifacts, or is evaluated on different data.
 - **How is improvement verified?** Look for held-out tasks, correctness gates, repeated runs, and protection against reward hacking or measurement leakage.
+- **What explains the score delta?** Separate benchmark-specific shortcuts from extra inference-time compute and residual gain; [[Harness Evolution Gain Attribution]] describes HDA's compute-matched and artifact-neutralized controls.
 - **What is the transfer scope?** Within-task adaptation is not the same claim as cross-task generalization; a benchmark result is not general intelligence or autonomous research capability.
 
 ## Systems trade-offs and safeguards
